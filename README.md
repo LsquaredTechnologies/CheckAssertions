@@ -1,20 +1,27 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Expect Assertion
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This is another assertion library which integrate to any testing framework
+like xUnit, NUnit, or MSTest (v1 or v2).
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Documentation
+
+### Usage
+
+In order to verify your assertion, you simply need to use `Expect.That()` with the the you want to check
+and intellisense will guide you with fluent methods:
+
+```csharp
+// Assert
+Expect.That(actualValue).IsEqualTo(expectedValue);
+```
+
+You can chain multiple assertions with the `And()` method to have a nice real english sentence.
+
+```csharp
+// Assert
+Expect.That(actualValue).Matches(expectedPattern).And().DoesNotMatch(nonExpectedPattern);
+```
 
 # Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Do not hesitate to contact me if you want new features.
