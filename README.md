@@ -1,5 +1,7 @@
 # Expect Assertion
 
+[![Build Status](https://dev.azure.com/lsquared/ExpectAssertions/_apis/build/status/ExpectAssertions?branchName=azure-pipelines)](https://dev.azure.com/lsquared/ExpectAssertions/_build/latest?definitionId=6&branchName=azure-pipelines)
+
 This is another assertion library which integrate to any testing framework
 like xUnit, NUnit, or MSTest (v1 or v2).
 
